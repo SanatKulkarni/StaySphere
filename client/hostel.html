@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+          type="image/svg+xml" 
+          href="./assets/titleImage.svg">
+    <title>Hostel Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="assets/titleImage.svg" alt="" class="title-image">
+    <h1>Hostel Management</h1>
+    <div>
+        <h2>Add Building</h2>
+        <form id="add-building-form">
+            <label for="building-name">Building Name:</label>
+            <input type="text" id="building-name" required>
+            <label for="floors">Floors:</label>
+            <textarea id="floors" required></textarea>
+            <button type="submit">Add Building</button>
+        </form>
+    </div>
+    <hr>
+    <div>
+        <br>
+        <h2>Add Student</h2>
+        <br><br>
+        <form id="add-student-form">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" required>
+            <label for="institute">Institute:</label>
+            <input type="text" id="institute" required>
+            <button type="submit">Add Student</button>
+        </form>
+    </div>
+    <br>
+    <hr>
+
+    <br>
+    <h2>Allocate Room</h2>
+    <br><br>
+<form id="allocate-room-form">
+    <label for="student-name-allocate">Student Name:</label>
+    <input type="text" id="student-name-allocate" name="student-name" required>
+
+    <label for="room-select">Select Room:</label>
+    <select id="room-select" name="room-number" required></select>
+
+    <button type="submit">Allocate Room</button>
+</form> 
+<br>
+<hr>
+<br>
+
+<form id="reallocate-room-form">
+    <h2>Reallocate Room</h2>
+    <br><br>
+    <label for="student-name-reallocate">Student Name:</label>
+    <input type="text" id="student-name-reallocate" name="student-name-reallocate" required>
+
+    <label for="new-room-select">New Room Number:</label>
+    <select id="new-room-select" name="new-room-select" required></select>
+
+    <button type="submit">Reallocate Room</button>
+</form>
+<br>
+<hr>
+
+
+    <div id="buildings">
+        <br>
+        <h2>Buildings</h2>
+        <br><br>
+        <table id="buildings-table"></table>
+    </div>
+
+
+    <div id="students">
+        <h2>Students</h2>
+        <br><br>
+        <table id="students-table"></table>
+    </div>
+
+
+    <div id="reports">
+        <h2>Room Occupancy Report</h2>
+        <br><br>
+        <table id="reports-table"></table>
+    </div>
+
+    <form id="feedback-form">
+        <h2>Student Feedback</h2>
+        <br><br>
+        <label for="student-name-feedback">Student Name:</label>
+        <input type="text" id="student-name-feedback" name="student-name-feedback" required>
+
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+        <label for="feedback-text">Feedback:</label>
+        <textarea id="feedback-text" name="feedback-text"></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+    <br>
+    <hr>
+
+    <br>
+    <h2>Student Ratings</h2>
+    <br><br>
+    <table id="ratings-table"></table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
