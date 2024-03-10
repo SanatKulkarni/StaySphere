@@ -24,11 +24,11 @@ Develop a solution for hostel management. The solution should provide features f
 
 # Challenges Faced
 
-- Handling the scalability and performance issues of the system as the number of users and data grows.
+- Versioning and Compatibility issues with the dependencies.
 - Ensuring the compatibility and interoperability of the system with different devices, browsers, and platforms.
-- Maintaining the security and integrity of the system and data from unauthorized access, manipulation, or attacks.
-- Providing adequate technical support and customer service to the users and resolving their issues and queries.
-- Complying with the legal and ethical regulations and standards of the hostel industry and the respective countries or regions.
+- Frontend-Backend integration issues.
+- Security and Access Control for admin and student users.
+- Database Connection and Querying Issues, connecting it to the frontend.
 
 # Future Prospects
 
